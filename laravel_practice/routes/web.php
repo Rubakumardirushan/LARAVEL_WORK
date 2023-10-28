@@ -20,3 +20,6 @@ return view('home');
 Route::get('/con', function () {
     return view('contact');
     });
+Route::post('/username', function () {
+
+});
