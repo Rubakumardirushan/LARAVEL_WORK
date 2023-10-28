@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +20,7 @@ return view('home');
 Route::get('/con', function () {
     return view('contact');
     });
-Route::post('/username', function () {
+Route::post('/username', function (Request $request) {
+    dd($request->all());
 
 });

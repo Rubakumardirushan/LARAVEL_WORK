@@ -7,8 +7,8 @@
 </head>
 <body>
 <form method="POST" action="<?=url('username') ?>">
-    <label for="username">username</label>
-    <input type="text" >
+    <label >username <input type="text" name="name" ></label>
+
     <input type="submit" value="send">
     <input type="hidden" name="_token" value="<?=csrf_token()?>">
 </form>
