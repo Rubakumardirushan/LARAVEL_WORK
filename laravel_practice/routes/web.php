@@ -15,5 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 //scope resolution operator ::
 Route::get('/', function () {
-return "hello world";
+return view('home');
 });
+Route::get('/con', function () {
+    return view('contact');
+    });
