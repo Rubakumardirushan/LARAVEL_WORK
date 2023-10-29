@@ -21,6 +21,7 @@ Route::get('/con', function () {
     return view('contact');
     });
 Route::post('/username', function (Request $request) {
-    dd($request->all());
+$name=$request->input('name');
+return 'hello'.$name;
 
 });
