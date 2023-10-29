@@ -22,6 +22,6 @@ Route::get('/con', function () {
     });
 Route::post('/username', function (Request $request) {
 $name=$request->input('name');
-return 'hello'.$name;
-
+//return 'hello'.$name;
+return redirect('con')->with('massage',$name);
 });

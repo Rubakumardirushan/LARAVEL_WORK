@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
+    <?=session('massage');
+  //  echo "massage";
+    ?>
 <form method="POST" action="<?=url('username') ?>">
     <label >username <input type="text" name="name" ></label>
 
