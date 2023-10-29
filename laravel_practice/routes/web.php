@@ -18,7 +18,8 @@ Route::get('/', function () {
 return view('home');
 });
 Route::get('/con', function () {
-    return view('contact');
+    $titel=" hello diru bhai";
+    return view('contact',['dirushan'=>$titel]);
     });
 Route::post('/username', function (Request $request) {
 $name=$request->input('name');

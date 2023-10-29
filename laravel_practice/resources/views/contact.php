@@ -8,7 +8,11 @@
 <body>
     <?=session('massage');
   //  echo "massage";
+
     ?>
+    <h1>
+        <?=$dirushan?>
+    </h1>
 <form method="POST" action="<?=url('username') ?>">
     <label >username <input type="text" name="name" ></label>
 
