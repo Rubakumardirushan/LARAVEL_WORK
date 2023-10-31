@@ -14,6 +14,7 @@ use Illuminate\Http\Request;
 */
 
 //scope resolution operator ::
+/*
 Route::get('/', function () {
 return view('home');
 });
@@ -25,4 +26,14 @@ Route::post('/username', function (Request $request) {
 $name=$request->input('name');
 //return 'hello'.$name;
 return redirect('con')->with('massage',$name);
+});
+*/
+Route::get('/dirushan', function () {
+    return view('dirushan');
+
+});
+Route::post('/diru', function (Request $request) {
+    $name=$request->input('username');
+    return redirect('dirushan')->with('msg',$name);
+
 });
