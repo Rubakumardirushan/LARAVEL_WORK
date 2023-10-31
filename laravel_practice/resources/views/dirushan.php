@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1> <?=$nam ?></h1>
 <form action="<?=url('diru')?>" method="POST">
 <label for="username">username</label>
 <input type="text" name="username">

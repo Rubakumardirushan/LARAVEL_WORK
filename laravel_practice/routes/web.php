@@ -29,7 +29,9 @@ return redirect('con')->with('massage',$name);
 });
 */
 Route::get('/dirushan', function () {
-    return view('dirushan');
+    $names="dirushan mass";
+
+    return view('dirushan',['nam'=>$names]);
 
 });
 Route::post('/diru', function (Request $request) {
