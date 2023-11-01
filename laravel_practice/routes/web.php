@@ -30,8 +30,8 @@ return redirect('con')->with('massage',$name);
 */
 Route::get('/dirushan', function () {
     $names="dirushan mass";
-
-    return view('dirushan',['nam'=>$names]);
+$names2="msd";
+    return view('dirushan',compact('names','names2'));
 
 });
 Route::post('/diru', function (Request $request) {
