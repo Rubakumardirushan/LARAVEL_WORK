@@ -39,3 +39,13 @@ Route::post('/diru', function (Request $request) {
     return redirect('dirushan')->with('msg',$name);
 
 });
+Route::get('khc/{id}/{type?}', function ($id,$type=null) {
+    if($type==null){
+        return $id;
+    }
+    else{
+        return $type;
+    }
+
+})->name('user');
+Route::view('msd', 'mypage');
